@@ -34,29 +34,29 @@ const workerConfig = {
       // `target` is a valid URL
       target: 'https://blog.windeling.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
+     // tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://example.com',
+     // statusPageLink: 'https://example.com',
       // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
-      hideLatencyChart: false,
+   //   hideLatencyChart: false,
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-      expectedCodes: [200],
+  //    expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 10000,
+  //    timeout: 10000,
       // [OPTIONAL] headers to be sent
-      headers: {
-        'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
+    //  headers: {
+     //   'User-Agent': 'Uptimeflare',
+     //   Authorization: 'Bearer YOUR_TOKEN_HERE',
       },
       // [OPTIONAL] body to be sent
-      body: 'text',
+    //  body: 'text',
       // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-      responseKeyword: 'Success',
+  //    responseKeyword: 'Success',
       // [OPTIONAL] if specified, the response must NOT contains the keyword to be considered as operational.
-      responseForbiddenKeyword: 'Bad gateway',
+   //   responseForbiddenKeyword: 'Bad gateway',
       // [OPTIONAL] if specified, the check will run in your specified region,
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
-      checkLocationWorkerRoute: 'https://xxx.example.com',
+  //    checkLocationWorkerRoute: 'https://xxx.example.com',
     },
 //text
    {
