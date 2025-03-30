@@ -58,7 +58,7 @@ const workerConfig = {
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
       checkLocationWorkerRoute: 'https://xxx.example.com',
     },
-
+//text
    {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'ccb_monitor',
