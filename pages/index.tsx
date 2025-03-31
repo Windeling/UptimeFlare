@@ -70,6 +70,11 @@ export default function Home({
         )}
 
         <Divider mt="lg" />
+        <Text size="xs" mt="xs" mb="xs" style={{
+          textAlign: 'center'
+        }}>
+          这里是Windeling所有服务监测站，在Genshin Impact风格化站点地图项目完成前，代行站点地图职能.
+        </Text>
       </main>
     </>
   )
