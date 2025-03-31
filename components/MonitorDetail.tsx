@@ -19,8 +19,7 @@ export default function MonitorDetail({
           {monitor.name}
         </Text>
         <Text mt="sm" fw={700}>
-          No data available, please make sure you have deployed your workers with latest config and
-          check your worker status!
+          无可用数据，请确保已经使用最新配置部署到Cloudflare worker并检查部署状态
         </Text>
       </>
     )
@@ -65,7 +64,7 @@ export default function MonitorDetail({
         )}
 
         <Text mt="sm" fw={700} style={{ display: 'inline', color: getColor(uptimePercent, true) }}>
-          Overall: {uptimePercent}%
+          服务可用性: {uptimePercent}%
         </Text>
       </div>
 
