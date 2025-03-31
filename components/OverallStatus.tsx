@@ -31,9 +31,9 @@ export default function OverallStatus({
   if (state.overallUp === 0 && state.overallDown === 0) {
     statusString = '未取得监测数据'
   } else if (state.overallUp === 0) {
-    statusString = '所有系统运行正常'
+    statusString = '所有系统运行故障'
   } else if (state.overallDown === 0) {
-    statusString = '所有系统单元故障'
+    statusString = '所有系统单元正常'
     icon = <IconCircleCheck style={{ width: 64, height: 64, color: '#059669' }} />
   } else {
     statusString = `部分系统单元故障 (${state.overallDown} out of ${state.overallUp + state.overallDown})`
