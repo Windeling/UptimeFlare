@@ -30,7 +30,7 @@ export default function Header() {
             >
               Windeling系统单元监测
             </Text>
-          </a>
+
         </div>
 
         <Group gap={5} visibleFrom="sm">
