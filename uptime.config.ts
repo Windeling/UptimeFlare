@@ -11,7 +11,7 @@ const pageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    "🌐 公开": ['blog_monitor',"yf_monitor"],
+    "🌐 公开": ['blog_monitor',"drive_monitor","yf_monitor"],
     "🔐 私有": ['ccb_monitor'],
   },
 }
@@ -108,6 +108,41 @@ const workerConfig = {
       tooltip: '个人云端剪切板服务状况监测',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       statusPageLink: 'https://ccb.windeling.com',
+      // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
+      hideLatencyChart: false,
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+    //  timeout: 10000,
+      // [OPTIONAL] headers to be sent
+    //  headers: {
+    //    'User-Agent': 'Uptimeflare',
+   //     Authorization: 'Bearer YOUR_TOKEN_HERE',
+  //    },
+      // [OPTIONAL] body to be sent
+   //   body: 'text',
+      // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
+     // responseKeyword: 'Success',
+      // [OPTIONAL] if specified, the response must NOT contains the keyword to be considered as operational.
+   //   responseForbiddenKeyword: 'Bad gateway',
+      // [OPTIONAL] if specified, the check will run in your specified region,
+      // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
+//      checkLocationWorkerRoute: 'https://xxx.example.com',
+    },
+
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'drive_monitor',
+      // `name` is used at status page and callback message
+      name: 'Cloudflare云存储服务',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://drive.windeling.com',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: '网盘服务状况监测',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://drive.windeling.com',
       // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
       hideLatencyChart: false,
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
