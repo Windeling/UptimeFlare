@@ -271,17 +271,17 @@ const workerConfig = {
     },
   {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'mail_monitor',
+      id: 'waline',
       // `name` is used at status page and callback message
-      name: 'Windeling个人邮箱服务',
+      name: 'Windelingの間评论服务监测',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
-      target: 'https://qiye.aliyun.com/',
+      target: 'https://waline.windeling.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: '@windeling.com私人邮件服务',
+      tooltip: 'Windelingの間评论服务及管理系统，同时也是一个waline在线预览页面',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-     // statusPageLink: 'https://tarot.windeling.com/',
+      statusPageLink: 'https://waline.windeling.com',
       // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
       hideLatencyChart: false,
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
