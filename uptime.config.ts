@@ -11,7 +11,7 @@ const pageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    "🌐 公开": ['blog_monitor',"drive_monitor",'analy_monitor','tarot_monitor','waline'],
+    "🌐 公开": ['blog_monitor',"qzez","drive_monitor",'analy_monitor','tarot_monitor','waline'],
     "🔐 私有": ['ccb_monitor','archive_monitor','todo_monitor','mail_monitor'],
   },
 }
