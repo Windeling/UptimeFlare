@@ -66,11 +66,11 @@ const workerConfig = {
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
-      target: 'https://gxqzez.com',
+      target: 'http://gxqzez.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: '钦州市第二中学官网监测',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://gxqzez.com',
+      statusPageLink: 'http://gxqzez.com',
       // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
       hideLatencyChart: false,
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
