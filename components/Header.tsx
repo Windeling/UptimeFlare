@@ -28,7 +28,7 @@ export default function Header() {
               variant="gradient"
               gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
             >
-              Windeling系统单元监测
+              Windelingの間 监测
             </Text>
 
         </div>
